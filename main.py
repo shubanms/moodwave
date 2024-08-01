@@ -20,4 +20,4 @@ def hello_world(input: HelloWorldInput):
 
 if __name__ == "__main__":
     subprocess.run("pytest")
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("main:app", reload=True)
